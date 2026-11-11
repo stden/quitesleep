@@ -1,0 +1,22 @@
+[tools]
+maven = "3.9.9"
+java = "21"
+
+[tasks.check]
+run = "git diff --check"
+
+[tasks."com_actionbarsherlock:build"]
+run = "mvn verify"
+dir = "com_actionbarsherlock"
+
+[tasks."com_actionbarsherlock:test"]
+run = "mvn test"
+dir = "com_actionbarsherlock"
+
+[tasks."com_viewpagerindicator:build"]
+run = "mvn verify"
+dir = "com_viewpagerindicator"
+
+[tasks."com_viewpagerindicator:test"]
+run = "mvn test"
+dir = "com_viewpagerindicator"
